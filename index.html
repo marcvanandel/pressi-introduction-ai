@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Introductie AI & ML</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<style>
+		.small {
+			font-size: 0.8em;
+		}
+	</style>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!-- Markdown support -->
+	<script src="plugin/markdown/marked.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Introductie AI & ML</h1>
+
+				<aside class="notes">
+					Dit is een eenvoudig introductie van AI & ML voor niet ontwikkelaars en 'minder hipster devs'.
+				</aside>
+			</section>
+			<section>
+				<h2>Wat is AI?</h2>
+				<p class="small">(AI is afkorting van Artificial Intelligence)</p>
+
+				<aside class="notes">
+					<p>
+						AI is de afkorting van Artificial Intelligence, Kunstmatige Intelligentie.
+						Daarmee wordt gedoeld op het uitvoeren van taken door een machine, een computer, waarvoor
+						intelligentie, denken vereist is <a href="#1">[1]</a>.
+						Dat brengt ons bij ons brein. Wat is denken? Hoe voeren wij taken uit? Hoe maken wij
+						beslissingen?
+
+						[1] <a href="http://web.media.mit.edu/~minsky/">Minsky</a> en <a
+							href="http://www-formal.stanford.edu/jmc/">McCarthy</a> 1950s
+					</p>
+				</aside>
+			</section>
+			<section>
+				<img class="stretch" data-src="images/beker-drink.jpg">
+
+				<aside class="notes">
+					Wat is dit?
+					Antwoord: beker
+				</aside>
+			</section>
+			<section>
+				<img class="stretch" data-src="images/beker-winner.jpg">
+
+				<aside class="notes">
+					Wat is dit?
+					Antwoord: beker
+				</aside>
+			</section>
+			<section>
+				<h2>Wat is een beker?</h2>
+				<ul>
+					<li class="fragment" data-autoslide="2000">Hoe weten we dat?</li>
+					<li class="fragment" data-autoslide="1000">Wie heeft ons dat verteld?</li>
+					<li class="fragment" data-autoslide="1000">Wie heeft ons dat geleerd?</li>
+					<li class="fragment" data-autoslide="1000">Hoe hebben we dat geleerd?</li>
+				</ul>
+			</section>
+			<section data-background-image="images/pattern.png">
+				<h2>Patronen</h2>
+				
+				<aside class="notes">
+						Wij herkennen patronen. 
+				</aside>
+			</section>
+			<section data-background-image="images/pattern.png" data-background-opacity="0.2">
+				<h2>Patronen</h2>
+				<img class="stretch" data-src="images/brain-human.png">
+
+				<aside class="notes">
+						Wij herkennen patronen. Onze anatomie is daar op gespecialiseerd. 
+						De beelden die we 'binnen krijgen', de beelden die we 'processen', alarmerende patronen daarin worden al vroeg opgevangen en triggeren reacties. 
+						Onze <b>amygdala</b> handelt gevaarlijke situaties al af voordat het in ons bewuste denken binnen komt. 
+						Patroonherkenning. Beeldherkenning.
+				</aside>
+			</section>
+			<section data-background-image="images/pattern.png" data-background-opacity="0.2">
+				<h2>Patronen</h2>
+				<img class="stretch" data-src="images/brain-machine.png">
+
+				<aside class="notes">
+						Artificial Intelligence doet exact hetzelfde. 
+						Patroonherkenning. 
+						Beeldherkenning. 
+						Tekstherkenning. 
+						Patronen ontdekken in data. 
+						Veel data. 
+						Veel processing. 
+						En altijd volgens dezelfde methodiek.
+				</aside>
+			</section>
+		</div>
+	</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
