@@ -103,6 +103,7 @@ module.exports = grunt => {
 		connect: {
 			server: {
 				options: {
+					hostname: 'localhost',
 					port: port,
 					base: root,
 					livereload: true,
@@ -182,5 +183,8 @@ module.exports = grunt => {
 
 	// Serve presentation locally
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
+
+	// Run tests
+	grunt.registerTask( 'test', [ 'jshint', 'qunit' ] );
 
 };
