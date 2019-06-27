@@ -38,6 +38,13 @@
 			background: white;
 			display: inline-block;
 		}
+
+		.column-2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+			text-align: center;
+		}
 	</style>
 
 	<!-- Printing and PDF exports -->
@@ -50,8 +57,10 @@
 	</script>
 
 	<!-- Markdown support -->
-	<script src="plugin/markdown/marked.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
+	<!--
+		<script src="plugin/markdown/marked.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+	-->
 </head>
 
 <body>
@@ -165,15 +174,27 @@
 				</section>
 			</section>
 			<section>
-				<h2>Maar hoe werkt dat dan?<br><span class="small">(bij een machine)</span></h2>
-				<img class="stretch" data-src="images/cpu.png">
+				<section>
+					<h2>Maar hoe werkt dat dan?<br><span class="small">(bij een machine)</span></h2>
+					<img class="stretch" data-src="images/cpu.png">
 
-				<aside class="notes">
-					CPU's (Central Processing Units) zijn vooral goed in rekenen.
-					Berekening uitvoeren.
-					In die hoek zit de 'oplossing' van hoe de machine werkt:
-					Wiskunde, Statistieken, Algebra.
-				</aside>
+					<aside class="notes">
+						CPU's (Central Processing Units) zijn vooral goed in rekenen.
+						Berekening uitvoeren.
+						In die hoek zit de 'oplossing' van hoe de machine werkt:
+						Wiskunde, Statistieken, Algebra.
+					</aside>
+				</section>
+				<section>
+					<div class="column-2">
+						<div><img style="max-height: none;" data-src="images/maths-1.png"></div>
+						<div><img style="max-height: none;" data-src="images/maths-2.png"></div>
+					</div>
+
+					<aside class="notes">
+						Maths Cheat Sheet from BecomingHuman.ai
+					</aside>
+				</section>
 			</section>
 			<section>
 				<h2>Hoe dan?</h2>
@@ -199,7 +220,7 @@
 							<li class="small fragment">Learning (<span class="yellow">ML</span>)</li>
 						</ul>
 					</li>
-					<li class="fragment" data-autoslide="0"><span class="yellow">Augmented Intelligence</span>?</li>
+					<li class="fragment"><span class="yellow">Augmented Intelligence</span>?</li>
 				</ul>
 
 				<aside class="notes">
@@ -218,10 +239,11 @@
 			<section>
 				<h2>Machine Learning</h2>
 				<ul>
-					<li class="fragment" data-autoslide="1000">Geen <span class="yellow">OOAD</span><span class="small">
+					<li class="fragment" data-autoslide="1000">Geen: <span class="yellow">OOAD</span><span
+							class="small">
 							(Object Oriented
 							Analyses and Design)</span></li>
-					<li class="fragment" data-autoslide="1000">Wel <span class="yellow">train models</span></li>
+					<li class="fragment">Wel: <span class="yellow">train models</span></li>
 				</ul>
 
 				<aside class="notes">
@@ -354,6 +376,45 @@
 				<span class="circle-250">word2vec</span> =>
 				<span class="circle-250">NER</span> =>
 				<span class="circle-250">dependecy</span>
+			</section>
+			<section>
+				<h1>Akte-AI</h1>
+				<h2><span class="yellow">Augmented Intelligence</span></h2>
+				<img class="stretch" data-src="images/akte-ai-logo-full.png">
+
+				<aside class="notes">
+					Augmented Intelligence van Notariële Akte kennis.
+				</aside>
+			</section>
+			<section>
+				<h2>Akte-AI <span class="yellow">flow</span></h2>
+				<img class="stretch" data-src="images/akte-ai-flow.svg">
+			</section>
+			<section>
+				<h2>Akte-AI <span class="yellow">Demo</span>(s)</h2>
+				<ul>
+					<li><a href="https://akteviewer.brk.kadaster.nl/demo/" target="_blank">viewer demo</a> <span
+							class="small">(auth)</span></li>
+					<li><a href="http://localhost:8080/" target="_blank">prodigy</a> <span
+							class="small">(akte-verzamelaar; localhost:8080)</span></li>
+					<li><a href="http://github.so.kadaster.nl/pages/Akte-AI/home/" target="_blank">documentatie</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3>Resources</h3>
+				<ul>
+					<li><a href="https://becominghuman.ai/introduction-to-artificial-intelligence-5fba0148ec99">
+							Becoming Human</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">WikipediA</a></li>
+					<li><a
+							href="https://bdtechtalks.com/2017/08/28/artificial-intelligence-machine-learning-deep-learning/">TechTalks</a>
+					</li>
+					<li><a href="https://spacy.io/">SpaCy.io</a></li>
+					<li><a
+							href="https://opendatascience.com/an-idiots-guide-to-word2vec-natural-language-processing/">OpenDataScience.com</a>
+					</li>
+					<li>..?</li>
+				</ul>
 			</section>
 		</div>
 	</div>
