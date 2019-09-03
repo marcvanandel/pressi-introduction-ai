@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Introductie AI & ML 4 Testers</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black-custom.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<style>
+		.small {
+			font-size: 0.8em;
+		}
+
+		.yellow {
+			color: yellow;
+		}
+
+		.red {
+			color: red;
+		}
+
+		.circle-250 {
+			border-radius: 50%;
+			width: 220px;
+			height: 220px;
+			/* font-size: 50px; */
+			color: black;
+			line-height: 200px;
+			text-align: center;
+			background: white;
+			display: inline-block;
+		}
+
+		.column-2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+			text-align: center;
+		}
+	</style>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!-- Markdown support -->
+	<!--
+		<script src="plugin/markdown/marked.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+	-->
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Introductie AI & ML</h1>
+				<h1>voor Testers</h1>
+
+				<aside class="notes">
+          Dit is een eenvoudige introductie van AI & ML voor testers.
+          
+          Grove opzet is:
+          <ul>
+            <li>Algemene introductie op AI en ML</li>
+            <li>Specifiek voor testers en testtools</li>
+            <li>Specifiek voor het testen van AI systemen</li>
+          </ul>
+				</aside>
+			</section>
+			<section>
+				<h2>Wat is <span class="yellow">AI</span>?</h2>
+				<p class="small">
+					(afkorting van <span class="yellow">Artificial Intelligence</span>,
+					a.k.a. <span class="yellow">Kunstmatige Intelligentie</span>)
+				</p>
+
+				<aside class="notes">
+					<p> AI is de afkorting van Artificial Intelligence, Kunstmatige Intelligentie.
+						Daarmee wordt gedoeld op het uitvoeren van taken door een machine, een computer, waarvoor
+						intelligentie, denken vereist is <a href="#1">[1]</a>. </p>
+					<p> Dat brengt ons bij ons brein. Wat is denken? Hoe voeren wij taken uit? Hoe maken wij
+						beslissingen? </p>
+					<p> [1] <a href="http://web.media.mit.edu/~minsky/">Minsky</a> en <a
+							href="http://www-formal.stanford.edu/jmc/">McCarthy</a> 1950s </p>
+				</aside>
+			</section>
+			<section>
+				<img class="stretch" data-src="images/beker-drink.jpg">
+
+				<aside class="notes">
+					Wat is dit?<br>
+					Antwoord: beker
+				</aside>
+			</section>
+			<section>
+				<img class="stretch" data-src="images/beker-winner.jpg">
+
+				<aside class="notes">
+					Wat is dit?<br>
+					Antwoord: beker
+				</aside>
+			</section>
+			<section>
+				<h2>Wat is een beker?</h2>
+				<ul>
+					<li class="fragment" data-autoslide="1000">Hoe weten we dat?</li>
+					<li class="fragment" data-autoslide="1000">Wie heeft ons dat verteld?</li>
+					<li class="fragment" data-autoslide="1000">Wie heeft ons dat geleerd?</li>
+					<li class="fragment">Hoe hebben we dat geleerd?</li>
+				</ul>
+			</section>
+			<section data-background-image="images/pattern.png" data-autoslide="2000" data-transition="none">
+				<h2>Patronen</h2>
+
+				<aside class="notes">
+					Wij herkennen patronen.
+				</aside>
+			</section>
+			<section data-background-image="images/pattern.png" data-background-opacity="0.2" data-transition="none">
+				<h2>Patronen</h2>
+
+				<aside class="notes">
+					Wij herkennen patronen.
+				</aside>
+			</section>
+			<section data-background-image="images/pattern.png" data-background-opacity="0.2">
+				<h2>Patronen</h2>
+				<img class="stretch" data-src="images/brain-human.png">
+
+				<aside class="notes">
+					<p> Wij herkennen patronen. Onze anatomie is daar op gespecialiseerd.
+						De beelden die we 'binnen krijgen', de beelden die we 'processen'.
+						Patroonherkenning. Beeldherkenning. </p>
+					<p> Alarmerende patronen daarin worden al vroeg opgevangen en triggeren reacties.
+						Onze <b>amygdala</b> handelt gevaarlijke situaties al af voordat het in ons bewuste denken
+						binnen
+						komt. </p>
+				</aside>
+			</section>
+			<section>
+				<section data-background-image="images/pattern.png" data-background-opacity="0.2">
+					<h2>Patronen</h2>
+					<img class="stretch" data-src="images/brain-machine.png">
+
+					<aside class="notes">
+						Artificial Intelligence doet exact hetzelfde.
+						Patroonherkenning.
+						Beeldherkenning.
+						Tekstherkenning.
+						Patronen ontdekken in data.
+						Veel data.
+						Veel processing.
+						En altijd volgens dezelfde methodiek.
+					</aside>
+				</section>
+				<section data-background-image="images/pattern.png" data-background-opacity="0.2">
+					<h2>Brain-inspired computing</h2>
+					<img class="stretch" data-src="images/cognitive-computing.jpg">
+
+					<aside class="notes">
+						Side note: <br>
+						Er is een (vrij) nieuwe trend gaande die het brein onderzoekt.
+						Hoe de werking, zowel in berekeningen als in materialen, nagemaakt en nagebootst zou kunnen
+						worden: <b>brain-inspired computing</b>
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Maar hoe werkt dat dan?<br><span class="small">(bij een machine)</span></h2>
+					<img class="stretch" data-src="images/cpu.png">
+
+					<aside class="notes">
+						CPU's (Central Processing Units) zijn vooral goed in rekenen.
+						Berekening uitvoeren.
+						In die hoek zit de 'oplossing' van hoe de machine werkt:
+						Wiskunde, Statistieken, Algebra.
+					</aside>
+				</section>
+				<section>
+					<div class="column-2">
+						<div><img style="max-height: none;" data-src="images/maths-1.png"></div>
+						<div><img style="max-height: none;" data-src="images/maths-2.png"></div>
+					</div>
+
+					<aside class="notes">
+						Maths Cheat Sheet from BecomingHuman.ai
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+
+					<h2>Hoe dan?</h2>
+					<ul>
+						<li class="fragment" data-autoslide="1000"><span class="yellow">Gelijkheid</span> berekenen</li>
+						<li class="fragment" data-autoslide="1000"><span class="yellow">Kans</span> berekenen</li>
+						<li class="fragment"><span class="yellow">Waarschijnlijkheid</span> berekenen</li>
+					</ul>
+
+					<aside class="notes">
+						(Volgende slide: Terug naar AI en ML. Is dat verschil tussen?)
+					</aside>
+				</section>
+				<section>
+					<img class="stretch" data-src="images/dogs-or-mops.jpg">
+
+					<aside class="notes">
+						Ook mensen doen aan gelijkheid en kansberekening om de waarschijnlijkheid te berekenen dat iets een hond is...
+
+						(Volgende slide: Terug naar AI en ML. Is dat verschil tussen?)
+					</aside>
+				</section>
+			</section>
+			<section>
+				<h2><span class="yellow">AI</span> vs <span class="yellow">ML</span></h2>
+				<ul>
+					<li class="fragment" data-autoslide="1000">
+						Cognitieve vaardigheden (<span class="yellow">AI</span>)
+					</li>
+					<li style="list-style-type:none">
+						<ul>
+							<li class="small fragment" data-autoslide="1000">Problem solving</li>
+							<li class="small fragment">Learning (<span class="yellow">ML</span>)</li>
+						</ul>
+					</li>
+					<li class="fragment"><span class="yellow">Augmented Intelligence</span>?</li>
+				</ul>
+
+				<aside class="notes">
+					<p>Artificial Intelligence (of Machine Intelligence) staat tegenover menselijke intelligentie.
+						Met intelligentie wordt gedoeld op cognitieve functies zoals 'problem solving' en 'learning'.
+					</p>
+					<p>Met dat machines beter worden, verschuift de definitie van wat wij intelligentie vinden.
+						Vroeger was tekstherkenning (OCR) een bijzondere kunde van de machine.
+						Tegenwoordig vinden we dat normaal of standaard.
+						Hetzelfde geldt voor spraakherkenning.</p>
+					<p>Met Augmented Intelligence wordt gedoeld op de samenwerking tussen mens en machine.
+						Of het samenwerken tussen Artificial Intelligence en 'normale' software om een schijnbare
+						intelligentie te leveren / te ervaren.</p>
+				</aside>
+			</section>
+			<section>
+				<h2>Machine Learning</h2>
+				<ul>
+					<li class="fragment" data-autoslide="1000">Geen: <span class="yellow">OOAD</span><span
+							class="small">
+							(Object Oriented
+							Analyses and Design)</span></li>
+					<li class="fragment">Wel: <span class="yellow">train models</span></li>
+				</ul>
+
+				<aside class="notes">
+					<p>Ipv zelf analyse doen op het domein en de regels zelf uit te werken en uit te programmeren,
+						trainen we modellen met miljoenen voorbeelden.
+						Ipv te proberen vast te leggen in regels hoe een kat er uit ziet,
+						trainen we een model met miljoenen voorbeelden van katten.
+						Het algoritme in het model vindt de patronen van een kat en kan deze gebruiken op nieuwe foto's.
+					</p>
+				</aside>
+			</section>
+			<section>
+				<h2>Types Machine Learning</h2>
+				<ul>
+					<li class="fragment" data-autoslide="1000"><span class="yellow">Supervised</span> learning</li>
+					<li class="fragment" data-autoslide="1000"><span class="yellow">Unsupervised</span> learning</li>
+					<li class="fragment" data-autoslide="1000"><span class="yellow">Reinforcement</span> learning</li>
+					<li class="fragment"><span class="red">Deep</span> learning</li>
+				</ul>
+
+				<aside class="notes">
+					Er zijn verschillende soorten Machine Learning.
+					In de volgende slides worden deze verder toegelicht.
+				</aside>
+			</section>
+			<section>
+				<h2>ML type: <span class="yellow">Supervised</span> learning</h2>
+				<img class="stretch" data-src="images/iris-dataset.png">
+				<p>Input en output zijn gelabeld</p>
+
+				<aside class="notes">
+					<p><b>Supervised learning</b> lijkt het meest op onze bekende wereld.
+						We trainen een model met door ons gelabelde data, zowel input als output data.</p>
+				</aside>
+			</section>
+			<section>
+				<h2>ML type: <span class="yellow">Unsupervised</span> learning</h2>
+				<img class="stretch" data-src="images/unsupervised-learning.jpg">
+				<p>Learning machine + analist</p>
+
+				<aside class="notes">
+					<p><b>Unsupervised learning</b> is al vager omdat we dan de machine voorzien van ongelabelde data
+						waarin deze op zoek gaat naar patronen.
+						Dit is vooral van toepassing op data waarin wij geen patronen weten.
+						Dit komt al erg dicht in de buurt van machines die echt zelf leren.
+						Het probleem hierbij is dat de interpretatie van de gevonden patronen ontbreekt.
+						Daarom wordt deze vorm meestal toegepast in combinatie met de mens, een analyst die waarde kan
+						geven aan de patronen.</p>
+				</aside>
+			</section>
+			<section>
+				<h2>ML type: <span class="yellow">Reinforcement</span> learning</h2>
+				<img class="stretch" data-src="images/reinforcement-learning-cycle.jpg">
+				<p>Regels ipv data</p>
+
+				<aside class="notes">
+					<p><b>Reinforcement learning</b> is anders omdat hierin geen data als input is, maar regels.
+						Bijvoorbeeld de regels van het spel Go en vervolgens gaat de machine allerlei verschillende
+						'routes' proberen te vinden binnen deze regels.
+						Onderdeel van de regels is wat het doel is dat bereikt moet worden.
+						Deze regels geven de machine de mogelijkheid om te bepalen of een route een positieve bijdrage
+						of negatieve bijdrage heeft om tot het doel te komen.</p>
+				</aside>
+			</section>
+			<section>
+				<h2>ML type: <span class="red">Deep</span> learning</h2>
+				<img class="stretch" data-src="images/deep-learning-dog.jpg">
+				<p>Neurale netwerken</p>
+
+				<aside class="notes">
+					<p><b>Deep learning</b> is een aparte groep binnen Machine Learning dat gebruik maakt van neurale
+						netwerken.
+						Dat lijkt meer op hoe ons eigen brein werkt.
+						Daarmee is het ook moeilijker uit te leggen hoe dit nu precies werkt.
+						Dit is een studie op zich.</p>
+				</aside>
+			</section>
+			<section>
+				<h2>Uitdagingen van ML</h2>
+				<ul>
+					<li class="fragment" data-autoslide="1000"><span class="red">Data !!!</span></li>
+					<li class="fragment" data-autoslide="1000"><span class="yellow">Vooroordelen</span> (Bias)</li>
+					<li class="fragment" data-autoslide="1000"><span class="yellow">Uitlegbaarheid</span></li>
+					<li class="fragment">Compute power (CPU vs GPU)</li>
+				</ul>
+
+				<aside class="notes">
+					<p>Het grootste probleem in Machine Learning is <b>data</b>.
+						De hoeveelheid data die beschikbaar is.
+						De data die gelabeld is (vooral met supervised learning).
+						De kwaliteit (of vervuiling) van de data.</p>
+					<p>Afhankelijk van de data kunnen er ook vooroordelen (biases) in de modellen sluipen.
+						Deze kunnen heel duidelijk zijn, maar kunnen ook erg moeilijk te vinden zijn.
+						Erg lastig in dit verband is dat ons eigen brein ook biases heeft ... en daar lijkt het
+						toegestaan te zijn.
+						Voor een machine mag dat (nog?) niet.
+						<span style="color: grey;">(Dat komt ook door ons gebruik van de machine, namelijk met
+							absolute
+							regels (uitkomst van onze
+							OOAD))</span>
+					</p>
+					<p>Door de complexiteit van de modellen en de hoeveelheid (en begrip van de kwaliteit van de)
+						data,
+						wordt het steeds moeilijker om uit te leggen waarom een machine een bepaalde uitkomst heeft.
+					</p>
+					<p>De grote hoeveelheid data en de verwerking van alle berekeningen kosten behoorlijk veel
+						opslag en
+						processing power.
+						Grafische weergave is gebaseerd op statistische berekeningen en daarom zijn GPU (Grafical
+						Processing Units) passende processoren om Machine Learning training en uitvoering mee te
+						doen.
+						Daar is veel ontwikkeling in de laatste tijd ... en ook behoorlijk duur.
+					</p>
+				</aside>
+			</section>
+			<section>
+				<h2>Natural Language Processing (NLP)</h2>
+				<img class="stretch" data-src="images/nlp-sentence-structure.png">
+
+				<aside class="notes">
+					<p>Natuurlijk is het mogelijk om met regels menselijke taal te interpreteren.
+						Mbv Machine Learning, vooral deep learning, wordt het mogelijk om de oneindelijke lijst van
+						variaties te tackelen.
+						Met NLP wordt dan ook <b>'statistische NLP'</b> bedoeld.</p>
+					<p>Mbv neurale netwerken worden zinnen ontleed en betekenis gegeven aan de individuele woorden
+						(tokens): <b>Named Entity Recognition</b> (NER).
+						Vervolgens worden verbanden gelegd: <b>Dependency Mapping</b>
+					</p>
+				</aside>
+			</section>
+			<section>
+				<h2>NLP flow</h2>
+				<span class="circle-250">tokenize</span> =>
+				<span class="circle-250">word2vec</span> =>
+				<span class="circle-250">NER</span> =>
+				<span class="circle-250">dependency</span>
+			</section>
+			<section>
+				<h1>Akte-AI</h1>
+				<h2><span class="yellow">Augmented Intelligence</span></h2>
+				<img class="stretch" data-src="images/akte-ai-logo-full.png">
+
+				<aside class="notes">
+					Augmented Intelligence (kennis) van Notariële Akte.
+				</aside>
+			</section>
+			<section>
+				<h2>Akte-AI <span class="yellow">flow</span></h2>
+				<img class="stretch" data-src="images/akte-ai-flow.svg">
+			</section>
+			<section>
+				<h2>Akte-AI <span class="yellow">Demo</span>(s)</h2>
+				<ul>
+					<li><a href="https://akteviewer.brk.kadaster.nl/demo/" target="_blank">viewer demo</a> <span
+							class="small">(auth)</span></li>
+					<li><a href="http://localhost:8080/" target="_blank">prodigy</a> <span
+							class="small">(akte-verzamelaar; localhost:8080)</span></li>
+					<li><a href="http://github.so.kadaster.nl/pages/Akte-AI/home/" target="_blank">documentatie</a>
+						<span class="small">(private)</span></li>
+				</ul>
+			</section>
+			<section>
+				<h3>Resources</h3>
+				<ul>
+					<li><a href="https://becominghuman.ai/introduction-to-artificial-intelligence-5fba0148ec99">
+							Becoming Human</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">WikipediA</a></li>
+					<li><a
+							href="https://bdtechtalks.com/2017/08/28/artificial-intelligence-machine-learning-deep-learning/">TechTalks</a>
+					</li>
+					<li><a href="https://spacy.io/">SpaCy.io</a></li>
+					<li><a
+							href="https://opendatascience.com/an-idiots-guide-to-word2vec-natural-language-processing/">OpenDataScience.com</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			width: 1060,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
