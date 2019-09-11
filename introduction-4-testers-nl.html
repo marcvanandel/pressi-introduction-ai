@@ -45,6 +45,15 @@
       grid-gap: 10px;
       text-align: center;
     }
+
+    ul.none {
+      list-style-type: none;
+    }
+
+    ul ul.second {
+      list-style-type: circle;
+      padding-bottom: 0;
+    }
   </style>
 
   <!-- Printing and PDF exports -->
@@ -394,21 +403,109 @@
       </section>
 
       <section>
-        <h1><span class="yellow">AI</span> voor <span class="yellow">testers</span></h1>
-        
+        <h1><span class="yellow">AI</span> voor testers</h1>
+        <h3>(thoughts ...)</h3>
+
         <aside class="notes">
-          <p>Wat betekent AI voor testers? </p>
-          <p>TODO Jolanda: aanvullen vanuit blog</p>
+          <p>
+            Wat betekent AI voor testers?
+            Hoe zou je als tester gebruik kunnen maken van AI?
+            Of AI tools en hulpmiddelen?
+          </p>
         </aside>
       </section>
       <section>
-        <h3>TODO Jolanda</h3>
+        <h3>Niveaus van <span class="yellow">AI</span></h3>
+        <p class="small">(<a href="https://www.bartosz.nl">Bartosz</a> blog)</p>
+        <ul class="none">
+          <li>Niveau 0: <span class="yellow">No AI</span></li>
+          <li>Niveau 1: <span class="yellow">AI assistance</span></li>
+          <li>Niveau 2: <span class="yellow">Partial AI automation</span></li>
+          <li>Niveau 3: <span class="yellow">Conditional AI automation</span></li>
+          <li>Niveau 4: <span class="yellow">High AI automation</span></li>
+          <li>Niveau 5: <span class="yellow">Full AI automation</span></li>
+        </ul>
 
         <aside class="notes">
-          // TODO Jolanda
+          Bartosz heeft een interessante blog over de verschillende niveaus van test tools en de hulp die daarin
+          beschikbaar is op basis van AI.
+          Zij komen met deze niveaus.
         </aside>
       </section>
-      
+
+      <section>
+        <h1>Testen van <span class="yellow">AI</span></h1>
+        <h3>(thoughts ...)</h3>
+
+        <aside class="notes">
+          <p>
+            Hoe test je AI?
+            Of AI systeem?
+            Of een systeem waarin AI een rol speelt?
+            En hoe groot is die rol dan?
+            Zijn hierin vergelijkbare niveaus te onderscheiden?
+          </p>
+        </aside>
+      </section>
+      <section>
+        <h3>Niveaus van <span class="yellow">AI</span></h3>
+        <p class="small">(<a href="https://www.bartosz.nl">Bartosz</a> blog)</p>
+        <ul class="none">
+          <li>Niveau 0: <span class="yellow">No AI</span></li>
+          <li>Niveau 1: <span class="yellow">AI assistance</span></li>
+          <li>Niveau 2: <span class="yellow">Partial AI automation</span></li>
+          <li>Niveau 3: <span class="yellow">Conditional AI automation</span></li>
+          <li>Niveau 4: <span class="yellow">High AI automation</span></li>
+          <li>Niveau 5: <span class="yellow">Full AI automation</span></li>
+        </ul>
+
+        <aside class="notes">
+          Zijn de niveaus van Bartosz ook toepasbaar op het testen van AI (systemen)?
+        </aside>
+      </section>
+      <section>
+        <h3>Considerations</h3>
+        <ul>
+          <li class="fragment"><span class="red">Data !!!</span>
+            <ul class="second">
+              <li class="small">Test data?</li>
+              <li class="small">Productie data?</li>
+              <li class="small">AVG? (privacy en zo ;-)</li>
+            </ul>
+          </li>
+          <li class="fragment"><span class="yellow">Vooroordelen</span> (Bias)
+            <ul class="second">
+              <li class="small">Geen absolute waarheid, maar waarschijnlijkheid</li>
+            </ul>
+          </li>
+          <li class="fragment"><span class="yellow">Uitlegbaarheid</span>
+            <ul class="second">
+              <li class="small">Geen absolute waarheid, maar waarschijnlijkheid</li>
+              <li class="small">Behavior Driven Development?</li>
+            </ul>
+          </li>
+          <li class="fragment">Compute power (CPU vs GPU)
+            <ul class="second">
+              <li class="small">Doorlooptijd?</li>
+              <li class="small">Omgevingen?</li>
+            </ul>
+          </li>
+        </ul>
+
+        <aside class="notes">
+          Wat zijn overwegingen bij het testen van AI (systemen)?
+          En hoe zouden we daar mee om moeten gaan?
+        </aside>
+      </section>
+
+      <section data-background-image="images/questions.jpg">
+
+        <aside class="notes">
+          Thank you!<br>
+          Any questions?
+        </aside>
+      </section>
+
       <section>
         <h3>Resources</h3>
         <ul>
@@ -427,9 +524,11 @@
             <a href="https://www.bartosz.nl">Bartosz</a>
             <ul>
               <li><a href="https://www.bartosz.nl/trendsz/impact-artificial-intelligence/">Blog AI</a></li>
-              <li><a href="https://www.bartosz.nl/trendsz/wat-betekent-de-komst-van-ai-voor-testers-deel-1/">Blog AI voor testers deel 1</a>
+              <li><a href="https://www.bartosz.nl/trendsz/wat-betekent-de-komst-van-ai-voor-testers-deel-1/">Blog AI
+                  voor testers deel 1</a>
               </li>
-              <li><a href="https://www.bartosz.nl/trendsz/wat-betekent-de-komst-van-ai-voor-testers-deel-2/">Blog AI voor testers deel 2</a>
+              <li><a href="https://www.bartosz.nl/trendsz/wat-betekent-de-komst-van-ai-voor-testers-deel-2/">Blog AI
+                  voor testers deel 2</a>
               </li>
             </ul>
           </li>
